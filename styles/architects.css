@@ -2,9 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
 /* Shared Styles */
-
 * {
   font-family: "Work Sans", sans-serif;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  background-color: #ff900e;
+  padding: 20px 25px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
 }
 
 /* Header Styles */
@@ -56,4 +66,30 @@ nav li a {
 
 .banner-description {
   color: #727272;
+}
+
+.banner img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Responsive Media Queries */
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+
+/* Tablet or Medium Type Devices  */
+@media screen and (min-width: 577px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
