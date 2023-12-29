@@ -6,6 +6,10 @@
   font-family: "Work Sans", sans-serif;
 }
 
+.text-light-gray {
+  color: #727272;
+}
+
 .btn-primary {
   border-radius: 8px;
   background-color: #ff900e;
@@ -64,10 +68,6 @@ nav li a {
   color: #131313;
 }
 
-.banner-description {
-  color: #727272;
-}
-
 .banner img {
   width: 100%;
   margin-top: 20px;
@@ -76,7 +76,7 @@ nav li a {
 /* Main Styles */
 main {
   max-width: 1440px;
-  margin: 0px auto;
+  margin: 70px auto;
 }
 
 /* Teams Styles */
@@ -101,7 +101,6 @@ main {
 }
 
 .teams-title .quick-list {
-  color: #727272;
   font-weight: 500;
 }
 
@@ -119,6 +118,17 @@ main {
   nav {
     flex-direction: column;
   }
+  .teams-container {
+    flex-direction: column-reverse;
+  }
+  .teams-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 1.8rem;
+  }
+  .teams-img-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Tablet or Medium Type Devices  */
@@ -128,5 +138,11 @@ main {
   }
   nav {
     flex-direction: column;
+  }
+  .teams-container {
+    flex-direction: column-reverse;
+  }
+  .teams-content {
+    margin-bottom: 1.8rem;
   }
 }
